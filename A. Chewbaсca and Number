@@ -1,0 +1,26 @@
+#include <iostream>
+ 
+ 
+using namespace std;
+ 
+ 
+int main() {
+    // Write C++ code here
+   string x;
+    cin >> x;
+    
+    for(int i=0;i<x.size();i++){
+if(i==0  && x[i]=='9'){
+continue;
+}
+        if(x[i]>'4'  &&  x[i]<='9'){
+            x[i]='9'-x[i]+'0';
+        }
+    }
+   
+   
+   
+   cout<<x;
+ 
+    return 0;
+}
